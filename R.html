@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food AI Camera</title>
+  <link rel="stylesheet" href="R.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Food AI Camera</h1>
+    <p>Ambil foto makanan → dapat resep otomatis dengan AI</p>
+  </div>
+
+  <div class="container">
+    <div class="camera-section">
+      <video id="camera" autoplay playsinline></video>
+      <canvas id="snapshot"></canvas>
+      <div class="camera-overlay"></div>
+    </div>
+
+    <div class="controls">
+      <button id="takePhoto">Ambil Foto</button>
+      <button id="retake">Ambil Ulang</button>
+      <button id="analyze">Analisis AI</button>
+    </div>
+
+    <div class="result-section" id="result">
+      <h2>Hasil Analisis</h2>
+      <div id="resultContent"></div>
+    </div>
+  </div>
+
+  <script src="R.js"></script>
+</body>
+</html>
